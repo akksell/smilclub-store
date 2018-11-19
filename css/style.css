@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Source+Code+Pro|Source+Sans+Pro');
 
 /* Navbar */
+.navbar {
+  z-index: 2;
+}
+
 .navbar-light .navbar-nav .nav-link {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
@@ -94,4 +98,6 @@ body {
   font-family: 'Roboto', sans-serif;
   margin-top: 50px;
   padding-bottom: 25px;
+  z-index: 0;
+  position: relative;
 }
