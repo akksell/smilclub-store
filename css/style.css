@@ -1,0 +1,97 @@
+/* Font references */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Source+Code+Pro|Source+Sans+Pro');
+
+/* Navbar */
+.navbar-light .navbar-nav .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #FAB81E;
+  -webkit-transition: color 0.25s; /* Safari */
+  transition: color 0.25s;
+}
+
+.dropdown-item {
+  color: #000;
+}
+
+.navbar-light .navbar-nav .dropdown-item:hover {
+  color: #FAB81E;
+  -webkit-transition: color 0.25s; /* Safari */
+  transition: color 0.25s;
+}
+
+.dropdown-header {
+  font-weight: bold;
+  color: #000;
+}
+
+.dropdown-menu {
+  color: #000;
+  border-radius: 0%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#navbarDropdown {
+  color: #fff;
+}
+
+#navbarDropdown:hover {
+  color: #FAB81E;
+  -webkit-transition: color 0.25s; /* Safari */
+  transition: color 0.25s;
+}
+
+/* Main page styles */
+body {
+  background-color: #000;
+  margin: 0px;
+}
+
+.index-center {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: auto;
+  height: auto;
+}
+
+.socialLinksCenter {
+  text-align: center;
+  padding: 0;
+  margin-left: 0;
+  margin-top: 40px;
+}
+
+
+.socialLink {
+  text-align: center;
+  margin: 15px;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 5px;
+  display: inline;
+}
+
+.socialLink:hover {
+  color: #FAB81E;
+  -webkit-transition: color 0.25s; /* Safari */
+  transition: color 0.25s;
+}
+
+.timer {
+  text-align: center;
+  letter-spacing: 3px;
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 50px;
+  padding-bottom: 25px;
+}

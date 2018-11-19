@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>smil. store - welcome</title>
+    <link rel="icon" type="image/jpg" href="./img/logos/favicon.png">
+
+    <!-- IOS 'Add to Home Screen' launch icon/title/native app design/launch screen -->
+    <meta name="apple-mobile-web-app-title" content="smil.merch"> <!-- App Title -->
+    <link rel="apple-touch-icon" href="touch-icon-250x250.png"> <!-- Default touch icon -->
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/ios/touch-icon-ipad.png"> <!-- Touch icon ipad -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/ios/touch-icon-iphone-retina.png"> <!-- Touch icon iphone-retina -->
+    <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png"> <!-- Touch icon for ipad-retina -->
+
+    <link rel="apple-touch-startup-image" href="./img/launch.png"><!-- Launch screen -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Remove Safari components -->
+
+    <!-- BootstrapCDN CSS-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- jQuery Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- PopperJS (required for tooltips) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- BootstrapCDN JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Stylesheet references -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!-- Fontawesome reference -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center" style="background-color: #000; border-bottom: 2px #fff solid;">
+      <a class="navbar-brand d-flex w-50 mr-auto" href="https://smil.club">
+        <img src="./img/logos/nav_logo_white.png" width="100" height="35" alt="Home" title="Home">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-angle-double-down" style="color: #fff;"></i>
+      </button>
+
+      <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 justify-content-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MEN</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header">Clothing</h6>
+              <a class="dropdown-item" href="#">Shirts</a>
+              <a class="dropdown-item" href="#">Sweatshirts / Hoodies</a>
+              <a class="dropdown-item" href="#">Jackets</a>
+              <a class="dropdown-item" href="#">Sweatpants</a>
+              <a class="dropdown-item" href="#">Shorts</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WOMEN</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header">Clothing</h6>
+              <a class="dropdown-item" href="#">Shirts</a>
+              <a class="dropdown-item" href="#">Sweatshirts / Hoodies</a>
+              <a class="dropdown-item" href="#">Jackets</a>
+              <a class="dropdown-item" href="#">Sweatpants</a>
+              <a class="dropdown-item" href="#">Shorts</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">COLLECTIONS</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+            <li class="nav-item">
+                <a href="https://twitter.com/CompanySmil" class="socialLink" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.instagram.com/smil.company/" class="socialLink" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="wrapper">
+      <div class="index-center">
+
+      <!-- Countdown JS -->
+      <script>
+      var countdownDate =  new Date("November 31, 2018 00:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+          // Get todays date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countdownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("timer").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+      }, 1000);
+      </script>
+
+      <p class="timer" id="timer"></p>
+      <div style="text-align: center;">
+        <ul class="socialLinksCenter">
+          <a href="https://twitter.com/CompanySmil" class="socialLink" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/smil.company/" class="socialLink" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </ul>
+      </div>
+    </div>
+
+
+      <!-- Merch cards -->
+      <!--  <div class="container">
+          <div class="col-lg-12">
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div> -->
+  </body>
+</html>
