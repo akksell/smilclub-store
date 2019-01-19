@@ -115,3 +115,9 @@ body {
   z-index: 0;
   position: relative;
 }
+
+.countdownTitle {
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Roboto', sans-serif;
+}
