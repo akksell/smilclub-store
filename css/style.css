@@ -1,6 +1,25 @@
 /* Font references */
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Source+Code+Pro|Source+Sans+Pro');
 
+/* Animations */
+@keyframes shake_text {
+     0% {
+          transform: translate(1px, 1px);
+     }
+     25% {
+          transform: translate(-2px, -2px);
+     }
+     50% {
+          transform: translate(2px, 2px);
+     }
+     75% {
+          transform: translate(-2px, -2px);
+     }
+     100% {
+          transform: translate(1px, 1px);
+     }
+}
+
 /* Navbar */
 .navbar {
   z-index: 2;
@@ -70,6 +89,7 @@
 body {
   background-color: #000;
   margin: 0px;
+  overflow: hidden;
 }
 
 .index-center {
@@ -83,13 +103,24 @@ body {
   height: auto;
 }
 
+.main-content {
+     margin-top: 50px;
+     margin-bottom: 50px;
+}
+
+.main-content-title {
+     color: #fff;
+     font-family: 'Source Code Pro', sans-serif;
+     animation: shake_text 2s infinite;
+     border-bottom: 1px solid #FAB81E;
+}
+
 .socialLinksCenter {
   text-align: center;
   padding: 0;
   margin-left: 0;
   margin-top: 40px;
 }
-
 
 .socialLink {
   text-align: center;
@@ -120,4 +151,52 @@ body {
 
 .countdownTitle {
      color: #fff;
+}
+
+/* shop cards */
+.card-dark-ui {
+     /*background-color: #161a1d;*/
+     background-color: #000;
+     color: #fff;
+     border: 1px solid #fff;
+     border-top-left-radius: calc(.5rem - 1px);
+     border-top-right-radius: calc(.5rem - 1px);
+
+     -webkit-touch-callout: none; /* iOS Safari */
+     -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.card-dark-ui > img {
+     border-top-left-radius: calc(.5rem - 1px);
+     border-top-right-radius: calc(.5rem - 1px);
+     border-bottom-left-radius: calc(.5rem - 1px);
+     border-bottom-right-radius: calc(.5rem - 1px);
+}
+
+.card-dark-ui .card-title {
+     font-family: 'Roboto', sans-serif;
+     letter-spacing: 1px;
+     color: #FAB81E;
+}
+
+.card-dark-ui .carousel-indicators li {
+     background-color: #888;
+}
+
+.card-dark-ui .carousel-indicators .active {
+     background-color: #000;
+}
+
+.card-link {
+     text-decoration: none;
+     color: inherit;
+}
+
+.card-link:hover {
+     text-decoration: none;
+     color: inherit;
 }

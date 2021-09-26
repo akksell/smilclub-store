@@ -84,72 +84,84 @@
       </div>
     </nav>
 
-
     <div class="wrapper">
-      <div class="index-center">
+         <!-- homepage content -->
+         <div class="container main-content">
+              <div class="row justify-content-center">
+                   <h1 class="main-content-title" id="main-content-title">NEW RELEASES</h1>
+              </div>
+         </div>
 
-      <!-- Countdown JS -->
-      <script>
-      var countdownDate =  new Date("February 2, 2019 00:00:00").getTime();
+         <!-- Merch cards -->
+         <div class="container">
+         <div class="row justify-content-center">
+                  <div class="card-deck justify-content-center">
+                       <div class="col-sm-4">
+                            <div class="card card-dark-ui">
+                                 <div id="newReleaseItemControls" class="carousel slide" data-ride="carousel">
+                                     <div class="carousel-inner">
+                                          <ol class="carousel-indicators">
+                                              <li data-target="#newReleaseItemControls" data-slide-to="0" class="active"></li>
+                                              <li data-target="#newReleaseItemControls" data-slide-to="1"></li>
+                                              <li data-target="#newReleaseItemControls" data-slide-to="2"></li>
+                                        </ol>
+                                          <div class="carousel-item active">
+                                               <img class="card-img-top d-block" src="./img/apparel/tmp.jpg" alt="First slide" draggable="false" ondragstart="return false;">
+                                          </div>
+                                          <div class="carousel-item">
+                                               <img class="card-img-top d-block" src="./img/apparel/tmp.jpg" alt="Second slide" draggable="false" ondragstart="return false;">
+                                          </div>
+                                          <div class="carousel-item">
+                                               <img class="card-img-top d-block" src="./img/apparel/tmp.jpg" alt="Third slide" draggable="false" ondragstart="return false;">
+                                          </div>
+                                   </div>
+                              </div>
 
-      // Update the count down every 1 second
-      var x = setInterval(function() {
 
-          // Get todays date and time
-          var now = new Date().getTime();
-
-          // Find the distance between now and the count down date
-          var distance = countdownDate - now;
-
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          document.getElementById("timer").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
-
-      }, 1000);
-      </script>
-
-      <h1 class="countdownTitle">Releasing Soon</h2>
-      <!-- <p class="timer" id="timer"></p> -->
-      <div style="text-align: center;">
-        <ul class="socialLinksCenter">
-          <a href="https://twitter.com/CompanySmil" class="socialLink" title="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/smil.company/" class="socialLink" title="Instagram"><i class="fab fa-instagram"></i></a>
-        </ul>
+                                <div class="card-body">
+                                     <!-- <a class="card-link" href="./classic-cap.html"> -->
+                                          <h5 class="card-title">CLASSIC</h5>
+                                          <p class="card-text"><small class="text-muted">SIZES: ONE SIZE FITS ALL</small></p>
+                                          <p class="card-text">$20</p>
+                                     <!-- </a> -->
+                                </div>
+                           </div>
+                      </div>
+                 </div>
+           </div>
       </div>
-    </div>
+</div>
 
+<!-- change card titles repeatedly -->
+     <script>
+     var ids_to_change = ['u1', 'u2', 'u3', 'u4'];
 
-      <!-- Merch cards -->
-      <!--  <div class="container">
-          <div class="col-lg-12">
-            <div class="card-deck">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div> -->
+     function getRandomInt(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+     }
+
+     function generate_title(id) {
+          var title_chars = ["▓", "█"];
+          var title_length = 20;
+          var index = 0;
+          var title_str = "";
+
+          for (i = 0; i < title_length; i++) {
+               index = getRandomInt(0, title_chars.length);
+               title_str += title_chars[index];
+          }
+
+          document.getElementById(id).innerHTML = title_str;
+     }
+
+     for (j = 0; j < ids_to_change.length; j++) {
+          generate_title(ids_to_change[j]);
+     }
+
+     </script>
+
+     <script src="./js/cards.js"/>
   </body>
 </html>
