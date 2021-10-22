@@ -89,7 +89,7 @@
 body {
   background-color: #000;
   margin: 0px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   min-height: 100vh;
 }
 
