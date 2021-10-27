@@ -1,5 +1,5 @@
 /* Font references */
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Source+Code+Pro|Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Source+Code+Pro');
 
 /* Animations */
 @keyframes shake_text {
@@ -226,7 +226,7 @@ body {
 
 .product-title {
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: #FAB81E;
   /*border-bottom: 1px solid #fff;*/
   margin-bottom: 30px;
@@ -238,15 +238,15 @@ body {
 }
 
 .product-price {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   font-size: 24px;
   color: #FAB81E;
 }
 
  .product-color-text {
-  font-size: 16px;
-  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-family: 'Source Code Pro', sans-serif;
   letter-spacing: 1px;
   color: #fff;
 }
@@ -322,7 +322,8 @@ body {
   padding-bottom: 7px;
 
   background-color: #000;
-  font-family: Arial, serif;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
   font-size: 30px;
   border: 1px solid #FAB81E;
   border-radius: calc(.6rem - 1px);
