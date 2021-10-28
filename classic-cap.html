@@ -83,16 +83,16 @@
      						<li data-target="#productGallery" data-slide-to="3"></li>
      					</ol>
      					<div class="carousel-inner" style="max-height: 500px;">
-     						<div class="carousel-item active">
+     						<div class="carousel-item active" data-touch="true">
      							<img class="d-block w-100" src="./img/apparel/classic_cap/white_front.jpg" alt="First slide">
      						</div>
-     						<div class="carousel-item">
+     						<div class="carousel-item" data-touch="touch">
      							<img class="d-block w-100" src="./img/apparel/classic_cap/white_back.jpg" alt="Second slide">
      						</div>
-     						<div class="carousel-item">
+     						<div class="carousel-item" data-touch="touch">
      							<img class="d-block w-100" src="./img/apparel/classic_cap/black_front.jpg" alt="Third slide">
      						</div>
-     						<div class="carousel-item">
+     						<div class="carousel-item" data-touch="touch">
      							<img class="d-block w-100" src="./img/apparel/classic_cap/black_back.jpg" alt="Fourth slide">
      						</div>
      					</div>
@@ -136,7 +136,7 @@
 
 			    // change order btn text based on available stock
 			    dataValue = $(this).data('value');
-			    if (!(dataValue === "white") && !(dataValue === "black")) {
+			    if (!(dataValue === "black")) {
 			    	orderBtn.html("SOLD OUT");
 			    	orderBtn.attr('href', '#');
 			    } else {
