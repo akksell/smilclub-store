@@ -20,6 +20,7 @@
 
 	     <!-- Stylesheet references -->
 	     <link rel="stylesheet" type="text/css" href="./css/style.css">
+	     <link rel="stylesheet" type="text/css" href="./css/inv-colors.css"> 
 
 	     <!-- Fontawesome reference -->
 	     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -81,77 +82,61 @@
      						<li data-target="#productGallery" data-slide-to="1"></li>
      						<li data-target="#productGallery" data-slide-to="2"></li>
      						<li data-target="#productGallery" data-slide-to="3"></li>
+							<li data-target="#productGallery" data-slide-to="4"></li>
+							<li data-target="#productGallery" data-slide-to="5"></li>
+							<li data-target="#productGallery" data-slide-to="6"></li>
+							<li data-target="#productGallery" data-slide-to="7"></li>
+							<li data-target="#productGallery" data-slide-to="8"></li>
      					</ol>
      					<div class="carousel-inner" style="max-height: 500px;">
      						<div class="carousel-item active" data-touch="true">
-     							<img class="d-block w-100" src="./img/apparel/classic_cap/white_front.jpg" alt="First slide">
+     							<img class="d-block w-100" src="./img/apparel/classic_cap/lightblue.jpg" alt="First slide">
      						</div>
      						<div class="carousel-item" data-touch="touch">
-     							<img class="d-block w-100" src="./img/apparel/classic_cap/white_back.jpg" alt="Second slide">
+     							<img class="d-block w-100" src="./img/apparel/classic_cap/butteryellow.jpg" alt="Second slide">
      						</div>
      						<div class="carousel-item" data-touch="touch">
-     							<img class="d-block w-100" src="./img/apparel/classic_cap/black_front.jpg" alt="Third slide">
+     							<img class="d-block w-100" src="./img/apparel/classic_cap/winered.jpg" alt="Third slide">
      						</div>
      						<div class="carousel-item" data-touch="touch">
-     							<img class="d-block w-100" src="./img/apparel/classic_cap/black_back.jpg" alt="Fourth slide">
+     							<img class="d-block w-100" src="./img/apparel/classic_cap/pink.jpg" alt="Fourth slide">
      						</div>
+							 <div class="carousel-item" data-touch="touch">
+								<img class="d-block w-100" src="./img/apparel/classic_cap/fadedpink.jpg" alt="Fourth slide">
+							</div>
+							<div class="carousel-item" data-touch="touch">
+								<img class="d-block w-100" src="./img/apparel/classic_cap/black.jpg" alt="Fourth slide">
+							</div>
+							<div class="carousel-item" data-touch="touch">
+								<img class="d-block w-100" src="./img/apparel/classic_cap/purple.jpg" alt="Fourth slide">
+							</div>
+							<div class="carousel-item" data-touch="touch">
+								<img class="d-block w-100" src="./img/apparel/classic_cap/red.jpg" alt="Fourth slide">
+							</div>
+							<div class="carousel-item" data-touch="touch">
+								<img class="d-block w-100" src="./img/apparel/classic_cap/mangoyellow.jpg" alt="Fourth slide">
+							</div>
      					</div>
      				</div>
      			</div>
 
      			<div class="col-lg-6 product-info"> <!-- product info text -->
-     				<h1 class="product-title"><a class="underline">CLASSIC CAP</a></h1>
-     				<p class="product-price">$20</p>
+     				<h1 class="product-title"><a class="underline" id="product-id">CLASSIC CAP</a></h1>
+     				<p class="product-price">$</p>
      				<p class="product-color-text">Colors:</p>
      				<div class="product-color-selection">
-     						<div id="selectedColor" class="color-select white" data-value="white"></div>
-	     					<div id="selectedColor" class="color-select black" data-value="black"></div>
-	     					<div id="selectedColor" class="color-select pink" data-value="pink"></div>
-	     					<div id="selectedColor" class="color-select purple" data-value="purple"></div>
-	     					<div id="selectedColor" class="color-select maroon" data-value="maroon"></div>
-	     					<div id="selectedColor" class="color-select lightblue" data-value="lightblue"></div>
      				</div>
      				<p class="product-description">
      					The classic cap is a 100% cotton 6-panel hat with an adjustable strap for all sizes.
 						It features a clean and simple design that promotes positivity everywhere you go.
      				</p>
      				<!-- <a class="add-to-cart-btn" href="#"><i class="fas fa-cart-plus"></i></a> -->
-     				<a class="add-to-cart-btn" href="#">SOLD OUT</i></a>
+     				<a class="add-to-cart-btn" href="#">ORDER</i></a>
      			</div>
      		</div>
      	</div>
 
      	<!-- jQuery script to add selection styling for color variants / order btn -->
-     	<script type="text/javascript">
-     		var orderBtn = $('.add-to-cart-btn');
-     		var dataValue;
-     		const formLink = "https://forms.gle/BeJ7yr6JssFAxDRG9";
-     		var isSelected = false;
-
-     		/*
-     		$('.product-color-selection .color-select').click(function(){
-			    $(this).parent().find('.color-select').removeClass('selected');
-			    $(this).addClass('selected'); // add styling to selection
-			    isSelected = true;
-			    $('.err-msg').remove();
-
-			    // change order btn text based on available stock
-			    dataValue = $(this).data('value');
-			    if (!(dataValue === "black")) {
-			    	orderBtn.html("SOLD OUT");
-			    	orderBtn.attr('href', '#');
-			    } else {
-			    	orderBtn.html("ORDER");
-			    	orderBtn.attr('href', formLink);
-			    }
-
-			});
-
-			orderBtn.click(function() {
-				if (!isSelected) {
-					$('.product-info').append("<p class=\"err-msg\">Please select a color</p>");
-				}
-			});*/
-     	</script>
+     	<script src="./js/inv-manager.js"></script>
 	</body>
 </html>

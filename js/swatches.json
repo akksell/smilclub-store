@@ -1,0 +1,43 @@
+{
+	"dataTitle": "Possible Swatches",
+	"swatches": [
+		{
+			"color1": "#252323",
+			"color2": "#EEE5E9",
+			"color3": "#52FFB8",
+			"color4": "#758173",
+			"color5": "#CE5374"
+		},
+		{
+			"color1": "#EAD2AC",
+			"color2": "#DF928E",
+			"color3": "#C58882",
+			"color4": "#D1DEDE",
+			"color5": "#1D201F"
+		},
+		{
+			"color1": "#2C363F",
+			"blush": "#E75A7C",
+			"ivory": "#F2F5EA",
+			"color4": "#D6DBD2"
+		},
+		{
+			"lightgray": "#D1D1D1",
+			"gainsboro": "#DBDBDB",
+			"dimgray": "#636363",
+			"davysgray": "#4C4C4C",
+			"lightskyblue": "#85C7F2"
+		},
+		{
+			"babypowder": "#FFFFFA",
+			"davysgray": "#515052",
+			"black": "#000103",
+			"jet": "#333138",
+			"redryb": "#FF312E"
+		},
+		{
+			"richblack": "#080708",
+			"silverpink": "#D5BBB1"
+		}
+	]
+}

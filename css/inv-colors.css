@@ -1,0 +1,76 @@
+.product-color-selection {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.product-color-selection input {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* color selection variants */
+.color-select {
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #afaeae;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.black {
+  background-color: #000;
+}
+
+.pink {
+  background-color: #f252b8;
+}
+
+.purple {
+  background-color: #8507f2;
+}
+
+.maroon {
+  background-color: #a60202;
+}
+
+.lightblue {
+  background-color: #19c5fa;
+}
+
+.butteryellow {
+  background-color: #F6EB61;
+}
+
+.mangoyellow {
+  background-color: #FFC300;
+}
+
+.winered {
+  background-color: #722F37;
+}
+
+.fadedpink {
+  background-color: #b0588d;
+}
+
+.brown {
+  background-color: #6b3407;
+}
+
+.red {
+  background-color: #d92323;
+}
+
+.color-select:hover {
+  border: 2px solid #5c5c5c;
+}
+
+.color-select.selected {
+  border: 2px solid #FAB81E;
+}
