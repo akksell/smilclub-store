@@ -155,11 +155,9 @@ body {
             user-select: none;
 }
 
-.card-dark-ui > img {
+.card-img-top {
      border-top-left-radius: calc(.5rem - 1px);
      border-top-right-radius: calc(.5rem - 1px);
-     border-bottom-left-radius: calc(.5rem - 1px);
-     border-bottom-right-radius: calc(.5rem - 1px);
 } 
 
 .card-dark-ui .card-title {
@@ -244,64 +242,11 @@ body {
   color: #FAB81E;
 }
 
- .product-color-text {
+.product-color-text {
   font-size: 18px;
   font-family: 'Source Code Pro', sans-serif;
   letter-spacing: 1px;
   color: #fff;
-}
-
-.product-color-selection {
-  display: flex;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.product-color-selection input {
-  opacity: 0;
-  position: absolute;
-  cursor: pointer;
-}
-
-/* color selection variants */
-.color-select {
-  margin-right: 15px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 2px solid #afaeae;
-}
-
-.product-color-selection .white {
-  background-color: #fff;
-}
-
-.product-color-selection .black {
-  background-color: #000;
-}
-
-.product-color-selection .pink {
-  background-color: #f252b8;
-}
-
-.product-color-selection .purple {
-  background-color: #8507f2;
-}
-
-.product-color-selection .maroon {
-  background-color: #a60202;
-}
-
-.product-color-selection .lightblue {
-  background-color: #19c5fa;
-}
-
-.color-select:hover {
-  border: 2px solid #5c5c5c;
-}
-
-.color-select.selected {
-  border: 2px solid #FAB81E;
 }
 
 .product-description {
