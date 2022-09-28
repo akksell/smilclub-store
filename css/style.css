@@ -193,7 +193,7 @@ body {
   padding-right: 10px;
   color: #fff;
   border: 1px solid #FAB81E;
-  border-radius: 10%;
+  border-radius: 0.3rem;
 }
 
 .buy-btn:hover {
